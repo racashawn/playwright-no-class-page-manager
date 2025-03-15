@@ -12,8 +12,6 @@ export async function clickAllLinks() {
   await getPage().getByRole("link", { name: "Installing Playwright", exact: true }).click();
   await getPage().getByRole("link", { name: "What's Installed" }).nth(2).click();
   await getPage().getByRole("link", { name: "Running the Example Test", exact: true }).click();
-  //   await getPage().pause();
-  //   await getPage().getByRole('img', { name: 'tests running in command line' }).waitFor({state: 'attached'});
   await expect(getPage().getByRole("img", { name: "tests running in command line" })).toBeVisible();
 }
 

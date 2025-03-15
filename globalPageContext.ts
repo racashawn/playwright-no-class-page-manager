@@ -14,7 +14,9 @@ export function getPage(): Page {
   return currentPage;
 }
 
-export function clearPage() {
-  console.log(`🧹 clearPage() called, resetting page reference`);
-  currentPage = null;
-}
+
+// Don't use this, it sometimes clears the page before the test is done
+// export function clearPage() {
+//   console.log(`🧹 clearPage() called, resetting page reference`);
+//   currentPage = null;
+// }
