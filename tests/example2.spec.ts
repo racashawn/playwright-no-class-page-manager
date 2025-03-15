@@ -26,16 +26,17 @@ test("test2", async () => {
   await homePage.navigateToHomepage();
   await getStartedPage.getStarted();
   await getStartedPage.clickApiLink();
-//   await getPage().pause()
+  //   await getPage().pause()
   await apiPage.isOnApiPage();
   await homePage.navigateToHomepage();
   await getStartedPage.getStarted();
   await getStartedPage.clickApiLink();
-//   await getPage().pause()
+  //   await getPage().pause()
   await apiPage.isOnApiPage();
   await homePage.navigateToHomepage();
   await getStartedPage.getStarted();
   await getStartedPage.clickApiLink();
-//   await getPage().pause()
+  //   await getPage().pause()
   await apiPage.isOnApiPage();
+  await apiPage.clickAllPropertiesLinks();
 });

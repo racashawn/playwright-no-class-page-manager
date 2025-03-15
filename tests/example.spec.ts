@@ -13,7 +13,6 @@ test("test1", async () => {
   await homePage.navigateToHomepage();
   await getStartedPage.getStarted();
   await getStartedPage.clickAllLinks();
- 
 });
 
 test("test2", async () => {
@@ -26,7 +25,6 @@ test("test2", async () => {
   await homePage.navigateToHomepage();
   await getStartedPage.getStarted();
   await getStartedPage.clickAllLinks();
-
 });
 
 test("test3", async () => {
