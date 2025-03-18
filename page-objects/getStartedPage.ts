@@ -1,7 +1,7 @@
 import { expect } from "@playwright/test";
 import { getPage } from "../globalPageContext";
 
-const navbarApi = () => getPage().getByRole("link", { name: "API", exact: true });
+const navbarApi = () => getPage().locator('a[href="/docs/api/class-playwright"]');
 
 export async function getStarted() {
   await getPage().getByRole("link", { name: "Get started" }).click();
@@ -16,5 +16,7 @@ export async function clickAllLinks() {
 }
 
 export async function clickApiLink() {
+  await navbarApi().waitFor({ state: "attached" });
+  await navbarApi().waitFor({ state: "visible" });
   await navbarApi().click();
 }
